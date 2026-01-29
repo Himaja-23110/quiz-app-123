@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Quiz App with Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container" id="login-page">
+    <h2>Welcome to Quiz App</h2>
+    <p>Enter your name to start:</p>
+    <input type="text" id="username" placeholder="Your Name">
+    <button id="login-btn">Login</button>
+</div>
+
+<div class="container" id="quiz-select" style="display:none;">
+    <h2>Select Quiz</h2>
+    <p>Hello <span id="display-name"></span>! Ready to test your knowledge?</p>
+    <button id="start-quiz-btn">Start Quiz</button>
+</div>
+
+<div class="container" id="quiz-page" style="display:none;">
+    <h2>Quiz Web App</h2>
+
+    <p id="qno">Question 1 of 10</p>
+    <p>Time Left: <span id="time">10</span> sec</p>
+    <div id="progress">
+        <div id="progress-bar"></div>
+    </div>
+
+    <div id="quiz-box">
+        <p id="question">Question will appear here</p>
+
+        <label>
+            <input type="radio" name="option" value="a">
+            <span>Option A</span>
+        </label>
+        <label>
+            <input type="radio" name="option" value="b">
+            <span>Option B</span>
+        </label>
+        <label>
+            <input type="radio" name="option" value="c">
+            <span>Option C</span>
+        </label>
+
+        <button>Next</button>
+    </div>
+
+    <h3 id="result"></h3>
+    <button id="restart-btn">Restart Quiz</button>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
+
